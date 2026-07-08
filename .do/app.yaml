@@ -1,0 +1,10 @@
+name: digital-ocean-sample
+static_sites:
+  - name: app
+    github:
+      repo: philippbekher-wq/digital-ocean-sample
+      branch: main
+      deploy_on_push: true
+    source_dir: app
+    build_command: npm run build
+    output_dir: dist
